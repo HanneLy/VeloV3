@@ -15,6 +15,12 @@ function main() {
   var station4 = document.getElementById("tr4");
   var stationname4 = document.getElementById("tr4td1");
   var stationstatus4 = document.getElementById("tr4td2");
+  var status4 = document.getElementsByClassName("station4status");
+  var station5 = document.getElementById("tr4");
+  var stationname5 = document.getElementById("tr4td1");
+  var stationstatus5 = document.getElementById("tr4td2");
+  var status5 = document.getElementsByClassName("station5status");
+
   var submitbutton = document.getElementById("submit");
   var outbutton = document.getElementById("out");
   var choice = document.getElementById("stationchoice");
@@ -114,14 +120,44 @@ function main() {
       stationname4.classList.add("reopened");
       stationstatus4.classList.remove("stillclosed");
       stationstatus4.classList.add("reopened");
-      stationstatus4.innerHTML="OPEN";
+      var x = 0;
+      while (x<status4.length) {
+            status4[x].innerHTML="OPEN";
+            x++;
+      };
     }
     else if (choice.value==="station4close") {
       stationname4.classList.remove("reopened");
       stationname4.classList.add("stillclosed");
       stationstatus4.classList.remove("reopened");
       stationstatus4.classList.add("stillclosed");
-      stationstatus4.innerHTML="CLOSED";
+      var x = 0;
+      while (x<status4.length) {
+            status4[x].innerHTML="CLOSED";
+            x++;
+      };
+    }
+    else if (choice.value==="station5open") {
+      stationname5.classList.remove("stillclosed");
+      stationname5.classList.add("reopened");
+      stationstatus5.classList.remove("stillclosed");
+      stationstatus5.classList.add("reopened");
+      var x = 0;
+      while (x<status5.length) {
+            status5[x].innerHTML="OPEN";
+            x++;
+      };
+    }
+    else if (choice.value==="station5close") {
+      stationname5.classList.remove("reopened");
+      stationname5.classList.add("stillclosed");
+      stationstatus5.classList.remove("reopened");
+      stationstatus5.classList.add("stillclosed");
+      var x = 0;
+      while (x<status2.length) {
+            status2[x].innerHTML="CLOSED";
+            x++;
+      };
     };
   };
 
@@ -129,11 +165,13 @@ function main() {
   var nearby2 = document.getElementById("nearbyLocation2");
   var nearby3 = document.getElementById("nearbyLocation3");
   var nearby4 = document.getElementById("nearbyLocation4");
+  var nearby5 = document.getElementById("nearbyLocation5");
 
   nearby1.onclick=function() {showNearbyStations()};
   nearby2.onclick=function() {showNearbyStations()};
   nearby3.onclick=function() {showNearbyStations()};
   nearby4.onclick=function() {showNearbyStations()};
+  nearby5.onclick=function() {showNearbyStations()};
 
   function showNearbyStations(){
     var thisStation = event.srcElement.parentNode.parentNode;
