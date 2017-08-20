@@ -1,0 +1,69 @@
+html {background: #FFF; font-family: verdana; color: #BA122B}
+
+body {position: absolute; width: 100%}
+
+header {position: fixed; width: 100%;}
+#balk {width: 100%; height: 70px;background: #BA122B;}
+#adminlink {width:2em; margin-top: 1.5em; margin-right: 4em; float: left; font-family: verdana; font-weight: bold; font-size: 1em;color: #F7A30A; margin-left: 2em;}
+a {color: #BA122B}
+#inloggen {float: left; width: 10em; margin-top: 1.8em;margin-right: 1em;}
+#loginbutton {font-size: 1em; padding: 0.5em; float: left;margin-top: 1em; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)}
+#meerinfodiv {color: #F7A30A; font-size: 2em; font-weight: bold; float: right;}
+#logo {float: right; width: 4.4em;}
+#meerinfotekst {float: left; margin-right: 2em; margin-top: 0.5em;}
+#manage {position: fixed; width: 15em; height: 5em; background: #F7A30A;padding: 1.5em;}
+#stationchoice {margin-bottom: 2em; width: 100%;}
+#submit {font-size: 1.2em;float: left;}
+#out {font-size: 1.2em; float: right;}
+main {width: 100%; height: 100%; text-align: center;}
+
+h1 {font-size: 2.5em; margin-top: 3.5em;}
+table {width: 40em; font-weight: bold; margin-left: auto; margin-right: auto; margin-top: 0.5em; margin-bottom: 2em;}
+#firstTable {margin-top: 2.5em;}
+tr {width: 30em;}
+td {font-size: 1.3em; font-weight: normal; text-align: left;}
+.td1 {width: 18em;}
+.td2 .td3 .td4 {text-align: right;}
+input {color: #BA122B; font-family: verdana; font-weight:bold; text-align: center;}
+.stillclosed {color: #BA122B;}
+.reopened {color: #F7A30A;}
+.nearbyLocation {font-size: 0.8em; color: #F7A30A; font-weight: bold;}
+.trnearby {color: black;font-weight: bold; font-size: 1em; height: 0.5em; padding-top: 0.5em; padding-bottom: 0.5em; margin-top: 4em;}
+.locationtext {font-size: 80%; font-weight: normal;}
+
+button {background: #BA122B; color: #F7A30A; font-weight: bold; font-size: 0.5em; border:none; }
+
+.invisible {display: none}
+
+@media (max-width:1000px) {
+  #meerinfotekst {font-size: 0.8em; margin-top: 0.8em;}
+  h1 {font-size: 1.5em; margin-top: 4.5em;}
+  td {font-size: 1em;}
+  table {width: 30em;}
+  .td1 {width: 17em;}
+  .trnearby {font-size: 0.7em;}
+}
+
+@media (max-width:730px) {
+  #meerinfotekst {font-size: 0.5em; margin-top: 1.6em;}
+  h1 {font-size: 1em; margin-top: 6.5em; font-weight: bold;}
+  td {font-size: 0.6em;}
+  table {width: 20em;}
+  .td1 {width: 17em;}
+  .trnearby {font-size: 0.5em;}
+  .nearbyLocation {font-size: 0.5em;}
+  .locationtext {font-size: 0.5em;}
+}
+
+@media (max-width:580px) {
+  #logo {width: 2em;   float: right;}
+  #meerinfotekst {font-size: 0.4em; margin-top: 3.5em; margin-right: -4.3em;}
+  h1 {font-size: 0.8em; margin-top: 7.5em; font-weight: bold;}
+  td {font-size: 0.6em;}
+  table {width: 18em; margin-left: 1em;}
+  .td1 {width: 17em;}
+  .trnearby {font-size: 0.5em;}
+  .nearbyLocation {font-size: 0.5em;}
+  .locationtext {font-size: 0.5em;}
+  #adminlink {width: 1em; font-size: 0.8em; margin-top: 0.8em; margin-left: 0.5em; display: none;}
+}

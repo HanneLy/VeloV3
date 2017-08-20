@@ -2,14 +2,112 @@
 <html>
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,800,600|Anton|Asap:400,700|Yantramanav:400,700,300|Hind+Vadodara:400,700,300|Palanquin+Dark:400,600,700' rel='stylesheet' type='text/css'>
-		<title> Reopened Stations </title>
+		<title>Tryout</title>
 		<link rel="stylesheet" type="text/css" href="reset.css">
-		<link rel="stylesheet" type="text/css" href="AppDemo.css">
+		<link rel="stylesheet" type="text/css" href="testpagina.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 	</head>
 
 	<body>
-		<p> Dit is een test. </p>
+    <header>
+      <div id="balk">
+				<button id="adminlink">
+					Admin
+				</button>
+				<div id="mainlogin" class="invisible">
+					<form>
+							<input type="text" id="inloggen">
+							</input>
+					</form>
+					<button id="loginbutton">
+							Log in
+					</button>
+      	</div>
+				<div id="meerinfodiv">
+					<p id="meerinfotekst"> Meer info? Bel 03 260 60 70 </p>
+					<img src="logo.png" alt="Logo" id="logo">
+				</div>
+			</div>
+			<div id="manage" class="invisible">
+				<form>
+					<input type="text" name="firstname" id="stationchoice">
+					</input>
+				</form>
+				<button id="submit">
+					Submit
+				</button>
+				<button id="out">
+					Close
+				</button>
+			</div>
+    </header>
+
+    <main>
+    <div id="maintext">
+      <h1> Volg hier welke stations opnieuw geopend worden </h1>
+        <div id="tables" class="main">
+							<table id="firstTable">
+          		<tr id="tr1" class="station">
+            				<td id="tr1td1" class="td1 tr1td1 stillclosed"> 001-Centraal Station - Astrid </td>
+            				<td id="tr1td2" class="td2 station1status stillclosed"> CLOSED </td>
+										<td id="tr1td3" class="td3 locationtext"> &nbsp&nbsp <a href="https://www.google.be/maps/place/Velo+001+-+Centraal+Station+-+Astrid/@51.2175802,4.4184035,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3f7011329d5b1:0x89e504c436533a8a!8m2!3d51.2175769!4d4.4205922?hl=nl" > Location </td>
+										<td id="nearbyLocation1" class="td4 nearbyLocation"> &nbsp&nbsp Nearby <td>
+							</tr>
+							<tr id="tr1nearby1" class="nearby invisible">
+										<td class="tr2td1 trnearby"> 002-Centraal Station - Astrid 2 </td>
+										<td class="station2status trnearby"> CLOSED </td>
+										<td class="trnearby locationtext"> &nbsp&nbsp <a href="https://www.google.be/maps/place/Velo+002+-+Centraal+Station+-+Astrid+2/@51.2176003,4.4185133,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3f7016dc3d587:0x5b8902f0f641aff4!8m2!3d51.217597!4d4.420702?hl=nl" > Location </td>
+							</tr>
+							<tr id="tr1nearby2" class="nearby invisible">
+										<td class="tr3td1 trnearby"> 003-Centraal Station - Kievit 2 </td>
+										<td class="station3status trnearby"> CLOSED </td>
+										<td class="trnearby locationtext"> &nbsp&nbsp <a href="https://www.google.be/maps/place/Velo+003+-+Centraal+station+Kievit+2/@51.2130853,4.4195723,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3f70364926fd9:0x420c97d3815f99cb!8m2!3d51.213082!4d4.421761?hl=nl" > Location </td>
+							</tr>
+							</table>
+
+							<table>
+							<tr id="tr2" class="station">
+            				<td id="tr2td1" class="td1 tr2td1 stillclosed"> 002-Centraal Station - Astrid 2 </td>
+            				<td id="tr2td2" class="td2 station2status stillclosed"> CLOSED </td>
+										<td id="tr1td3" class="td3 locationtext"> &nbsp&nbsp <a href="https://www.google.be/maps/place/Velo+002+-+Centraal+Station+-+Astrid+2/@51.2176003,4.4185133,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3f7016dc3d587:0x5b8902f0f641aff4!8m2!3d51.217597!4d4.420702?hl=nl" > Location </td>
+										<td id="nearbyLocation2" class="td4 nearbyLocation"> &nbsp&nbsp Nearby </td>
+				  		</tr>
+							</table>
+
+							<table>
+          		<tr id="tr3" class="station">
+            				<td id="tr3td1" class="td1 stillclosed"> 003-Centraal Station - Kievit 2 </td>
+            				<td id="tr3td2" class="td2 station3status stillclosed"> CLOSED </td>
+										<td id="tr3td3" class="td3 locationtext"> &nbsp&nbsp <a href="https://www.google.be/maps/place/Velo+003+-+Centraal+station+Kievit+2/@51.2130853,4.4195723,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3f70364926fd9:0x420c97d3815f99cb!8m2!3d51.213082!4d4.421761?hl=nl" > Location </td>
+										<td id="nearbyLocation3" class="td4 nearbyLocation"> &nbsp&nbsp Nearby </td>
+							</tr>
+							<tr id="tr3nearby1" class="nearby invisible">
+												<td class="tr2td1 trnearby"> 002-Centraal Station - Astrid 2 </td>
+												<td class="station2status trnearby"> CLOSED </td>
+												<td class="trnearby locationtext"> &nbsp&nbsp <a href="https://www.google.be/maps/place/Velo+002+-+Centraal+Station+-+Astrid+2/@51.2176003,4.4185133,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3f7016dc3d587:0x5b8902f0f641aff4!8m2!3d51.217597!4d4.420702?hl=nl" > Location </td>
+							</tr>
+							</table>
+
+							<table>
+							<tr id="tr4" class="station">
+            				<td id="tr4td1" class="td1 stillclosed"> 004-De Keyserlei </td>
+            				<td id="tr4td2" class="td2 stillclosed"> CLOSED </td>
+										<td id="tr4td3" class="td3 locationtext"> &nbsp&nbsp <a href="https://www.google.be/maps/place/Velo+004+-+De+Keyserlei/@51.2173373,4.4178303,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3f70177197913:0x39110891cf5e7a5f!8m2!3d51.217334!4d4.420019?hl=nl"> Location </td>
+										<td id="nearbyLocation4" class="td4 nearbyLocation"> &nbsp&nbsp Nearby </td>
+							</tr>
+							<tr id="tr4nearby1" class="nearby invisible">
+										<td class="tr2td1 trnearby"> 002-Centraal Station - Astrid 2 </td>
+										<td class="station2status trnearby"> CLOSED </td>
+										<td class="trnearby locationtext"> &nbsp&nbsp <a href="https://www.google.be/maps/place/Velo+002+-+Centraal+Station+-+Astrid+2/@51.2176003,4.4185133,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3f7016dc3d587:0x5b8902f0f641aff4!8m2!3d51.217597!4d4.420702?hl=nl" > Location </td>
+							</tr>
+							</table>
+      </div>
+    </main>
+
+    <footer>
+    </footer>
 	</body>
+
+  <script src="testpagina.js"></script>
 </html>
