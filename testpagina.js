@@ -90,6 +90,21 @@ function main() {
   var stationname334 = document.getElementById("tr334td1");
   var stationstatus334 = document.getElementById("tr334td2");
   var status334 = document.getElementsByClassName("station334status");
+  var stationname163 = document.getElementById("tr163td1");
+  var stationstatus163 = document.getElementById("tr163td2");
+  var status163 = document.getElementsByClassName("station163status");
+  var stationname321 = document.getElementById("tr321td1");
+  var stationstatus321 = document.getElementById("tr321td2");
+  var status321 = document.getElementsByClassName("station321status");
+  var stationname322 = document.getElementById("tr322td1");
+  var stationstatus322 = document.getElementById("tr322td2");
+  var status322 = document.getElementsByClassName("station322status");
+  var stationname332 = document.getElementById("tr332td1");
+  var stationstatus332 = document.getElementById("tr332td2");
+  var status332 = document.getElementsByClassName("station332status");
+  var stationname309 = document.getElementById("tr309td1");
+  var stationstatus309 = document.getElementById("tr309td2");
+  var status309 = document.getElementsByClassName("station309status");
   var station13 = document.getElementById("tr13");
   var station14 = document.getElementById("tr14");
   var station15 = document.getElementById("tr15");
@@ -7164,6 +7179,116 @@ function main() {
       var x = 0;
       while (x<status334.length) {
             status334[x].innerHTML="GESLOTEN";
+            x++;
+      };
+    }
+    else if (choice.value==="station163open") {
+      stationname163.classList.remove("stillclosed");
+      stationname163.classList.add("reopened");
+      stationstatus163.classList.remove("stillclosed");
+      stationstatus163.classList.add("reopened");
+      var x = 0;
+      while (x<status163.length) {
+            status163[x].innerHTML="OPEN";
+            x++;
+      };
+    }
+    else if (choice.value==="station163close") {
+      stationname163.classList.remove("reopened");
+      stationname163.classList.add("stillclosed");
+      stationstatus163.classList.remove("reopened");
+      stationstatus163.classList.add("stillclosed");
+      var x = 0;
+      while (x<status163.length) {
+            status163[x].innerHTML="GESLOTEN";
+            x++;
+      };
+    }
+    else if (choice.value==="station321open") {
+      stationname321.classList.remove("stillclosed");
+      stationname321.classList.add("reopened");
+      stationstatus321.classList.remove("stillclosed");
+      stationstatus321.classList.add("reopened");
+      var x = 0;
+      while (x<status321.length) {
+            status321[x].innerHTML="OPEN";
+            x++;
+      };
+    }
+    else if (choice.value==="station321close") {
+      stationname321.classList.remove("reopened");
+      stationname321.classList.add("stillclosed");
+      stationstatus321.classList.remove("reopened");
+      stationstatus321.classList.add("stillclosed");
+      var x = 0;
+      while (x<status321.length) {
+            status321[x].innerHTML="GESLOTEN";
+            x++;
+      };
+    }
+    else if (choice.value==="station322open") {
+      stationname322.classList.remove("stillclosed");
+      stationname322.classList.add("reopened");
+      stationstatus322.classList.remove("stillclosed");
+      stationstatus322.classList.add("reopened");
+      var x = 0;
+      while (x<status322.length) {
+            status322[x].innerHTML="OPEN";
+            x++;
+      };
+    }
+    else if (choice.value==="station322close") {
+      stationname322.classList.remove("reopened");
+      stationname322.classList.add("stillclosed");
+      stationstatus322.classList.remove("reopened");
+      stationstatus322.classList.add("stillclosed");
+      var x = 0;
+      while (x<status322.length) {
+            status322[x].innerHTML="GESLOTEN";
+            x++;
+      };
+    }
+    else if (choice.value==="station332open") {
+      stationname332.classList.remove("stillclosed");
+      stationname332.classList.add("reopened");
+      stationstatus332.classList.remove("stillclosed");
+      stationstatus332.classList.add("reopened");
+      var x = 0;
+      while (x<status332.length) {
+            status332[x].innerHTML="OPEN";
+            x++;
+      };
+    }
+    else if (choice.value==="station332close") {
+      stationname332.classList.remove("reopened");
+      stationname332.classList.add("stillclosed");
+      stationstatus332.classList.remove("reopened");
+      stationstatus332.classList.add("stillclosed");
+      var x = 0;
+      while (x<status332.length) {
+            status332[x].innerHTML="GESLOTEN";
+            x++;
+      };
+    }
+    else if (choice.value==="station309open") {
+      stationname309.classList.remove("stillclosed");
+      stationname309.classList.add("reopened");
+      stationstatus309.classList.remove("stillclosed");
+      stationstatus309.classList.add("reopened");
+      var x = 0;
+      while (x<status309.length) {
+            status309[x].innerHTML="OPEN";
+            x++;
+      };
+    }
+    else if (choice.value==="station309close") {
+      stationname309.classList.remove("reopened");
+      stationname309.classList.add("stillclosed");
+      stationstatus309.classList.remove("reopened");
+      stationstatus309.classList.add("stillclosed");
+      var x = 0;
+      while (x<status309.length) {
+            status309[x].innerHTML="GESLOTEN";
             x++;
       };
     };
